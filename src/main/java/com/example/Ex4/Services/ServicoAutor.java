@@ -26,7 +26,7 @@ public class ServicoAutor {
         return repositorio.findById(id).orElse(null);
     }
 
-    public void deletar(Autor autor){
-        repositorio.delete(autor);
+    public void deletar(Long id){
+        repositorio.deleteById(id);
     }
 }
